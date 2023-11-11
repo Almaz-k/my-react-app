@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import ToDoApp from './todolist/TodoApp';
 import CounterApp from './counterapp/CounterApp';
 import UserProfileCard from './userprofilecard/UserProfileCard';
+import EventHandlingApp from './todolist/EventHandlingAPP/EventHandlingApp';
+import FormComponent from './ControlledComponentForm/formComponent';
+import ContactForm from './ContactForm/ContactForm';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -13,6 +16,10 @@ root.render(
     <CounterApp/> 
     {/*<CounterApp />*/} 
     <UserProfileCard name ="Berhe" age="30" email="berheteka@gmail.com"/> 
+    <EventHandlingApp/>
+    <FormComponent/>
+    ====form Validation ====
+        <ContactForm/>
   </React.StrictMode>
 );
 //all toDoApp, CounterApp and UserProfileCard are all child of the index TODOlist
