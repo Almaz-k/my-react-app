@@ -14,7 +14,7 @@ function EventHandlingApp(){//initialize satet for the text message
  return(   
         <>
         <p> {paragraph} </p>
-        <button onClick={onClick}> Click me </button>
+        <button onClick={onClick}> Button Clicked </button>
         </>
     )
 }
