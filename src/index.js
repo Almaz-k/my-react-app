@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import ToDoApp from './todolist/TodoApp';
 import CounterApp from './counterapp/CounterApp';
 import UserProfileCard from './userprofilecard/UserProfileCard';
-import EventHandlingApp from './todolist/EventHandlingAPP/EventHandlingApp';
+import EventHandlingApp from './EventHandlingAPP/EventHandlingApp';
 import FormComponent from './ControlledComponentForm/formComponent';
 import ContactForm from './ContactForm/ContactForm';
 const root = ReactDOM.createRoot(document.getElementById('root'));
