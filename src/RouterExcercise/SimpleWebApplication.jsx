@@ -20,14 +20,14 @@ function SimpleWebApplication(){
                         <Link to ="/Contact"> Contact</Link>
                     </li>
                     <li>
-                        <Link to ="News"> News</Link>
+                        <Link to ="/News"> News</Link>
                     </li>
                 </ul>
             </nav>
             <Routes>
-                <Route path ="/"component={Home}/>
-                <Route path= "/Contact" component={Contact}/>
-                <Route  component={PageNotFound}/>
+                <Route path ="/" Component={Home}/>
+                <Route path= "/Contact" Component={Contact}/>
+                <Route  path= "*" Component={PageNotFound}/>
             </Routes>
         </Router>
     );

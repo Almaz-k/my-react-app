@@ -4,7 +4,7 @@ import {Link} from'react-router-dom';
 function Home(){
     return(
         <>
-        <h1>Wellcome to the Home Page </h1>
+        <h1>Wellcome to the Home Page of Movies </h1>
         <ul>
             <li><Link to="movies/Revenge"> Revenage </Link> </li>
             <li><Link to="movies/Breaking Bad"> Breaking Bad </Link></li>

@@ -25,7 +25,7 @@ root.render(
     <ContactForm/>
     === Routing ===
     <SimpleRouting/>
-    ===PageNotFound Routhing===
+   ===PageNotFound Routhing===
     <SimpleWebApplication/>
    ===Movie details with Route params and query strings===
    <MovieInfo/>

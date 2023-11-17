@@ -10,7 +10,8 @@ return(
     <Router>
         <home/>
         <Routes>
-            <Route path="/movies/:moviename" component={MoveDetails}/>
+            <Route path="/" exact Component={Home}/>
+            <Route path="/movies/:moviename" Component={MoveDetails}/>
         </Routes>
     </Router>
 );
