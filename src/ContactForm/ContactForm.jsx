@@ -22,7 +22,8 @@ function onPhoneChange(event){
   return;
 }
 
-function onSubmit(){
+function onSubmit(e){
+    e.preventDefualt();
     if(!email){
         setEmailError('Email is required');
         return;

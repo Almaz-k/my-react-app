@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ToDoApp from './todolist/TodoApp';
 import CounterApp from './counterapp/CounterApp';
@@ -9,6 +8,10 @@ import UserProfileCard from './userprofilecard/UserProfileCard';
 import EventHandlingApp from './EventHandlingAPP/EventHandlingApp';
 import FormComponent from './ControlledComponentForm/formComponent';
 import ContactForm from './ContactForm/ContactForm';
+import SimpleRouting from './RouterExcercise/SimpleRouting';
+import SimpleWebApplication from './RouterExcercise/SimpleWebApplication';
+import MovieInfo from './RouterExcercise/MovieInfo';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -19,8 +22,15 @@ root.render(
     <EventHandlingApp/>
     <FormComponent/>
     ====form Validation ====
-        <ContactForm/>
+    <ContactForm/>
+    === Routing ===
+    <SimpleRouting/>
+    ===PageNotFound Routhing===
+    <SimpleWebApplication/>
+   ===Movie details with Route params and query strings===
+   <MovieInfo/>
   </React.StrictMode>
+  
 );
 //all toDoApp, CounterApp and UserProfileCard are all child of the index TODOlist
 //on userprofilecard age, name and email are the props

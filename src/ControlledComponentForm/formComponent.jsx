@@ -16,7 +16,8 @@ function FormComponent(){
         <>
         name:
         <input type="text" onChange={(e) => onChange(e)} />
-        email: <input type="email" onChange={(e) => onEmailChange(e)} />
+        email: 
+        <input type="email" onChange={(e) => onEmailChange(e)} />
         <p>output name:{name}</p>
         <p>output email:{email}</p>
         </>

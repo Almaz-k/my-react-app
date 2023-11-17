@@ -1,7 +1,6 @@
 // analysis
 //what todo? display counter values on screen
 //buttons to increment and decrement and reset the counter
-
 // how to do, use the state  and functional component from precious values 
 
 import React, {useState} from "react";
@@ -29,7 +28,7 @@ function CounterApp(){
     return(
         <>
         <p>{counter}</p>
-        <input type="text" nmae="counter" onChange={(e)=>setCurrentValueFromInput(e)}/>
+        <input type="text" name="counter" onChange={(e)=>setCurrentValueFromInput(e)}/>
         <button type="button" onClick={increment}>increment</button>
         <button type="button" onClick={decrement} >decrement</button>
         <button type="button" onClick={reset} >reset</button>
@@ -37,4 +36,4 @@ function CounterApp(){
  
     )
 }    
-export default CounterApp
+export default CounterApp;
