@@ -11,10 +11,13 @@ import ContactForm from './ContactForm/ContactForm';
 import SimpleRouting from './RouterExcercise/SimpleRouting';
 import SimpleWebApplication from './RouterExcercise/SimpleWebApplication';
 import MovieInfo from './RouterExcercise/MovieInfo';
-
+import { Provider } from 'react-redux';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider/>
+    ==Redux counter value===
+    <Counter/>
     <ToDoApp/>
     <CounterApp/> 
     {/*<CounterApp />*/} 
