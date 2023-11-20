@@ -12,26 +12,39 @@ import SimpleRouting from './RouterExcercise/SimpleRouting';
 import SimpleWebApplication from './RouterExcercise/SimpleWebApplication';
 import MovieInfo from './RouterExcercise/MovieInfo';
 import { Provider } from 'react-redux';
+import {Store} from './ReduxExcercise/Store';
+import Counter from './ReduxExcercise/Counter';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider/>
-    ==Redux counter value===
-    <Counter/>
+    <Provider store={Store}>
+    === Redux counter value
+    <Counter/><br/> <br/>
+    === Todo List 
     <ToDoApp/>
-    <CounterApp/> 
-    {/*<CounterApp />*/} 
+    === Counter App without redux
+    <CounterApp/> <br/>
+     
+    <br/>
+    === User Profile 
     <UserProfileCard name ="Berhe" age="30" email="berheteka@gmail.com"/> 
+    <br/>
+    === Event Handling App
     <EventHandlingApp/>
+    <br/> <br/>
+    === Form Component <br/>
     <FormComponent/>
-    ====form Validation ====
+    <br/>
+    === form Validation 
     <ContactForm/>
-    === Routing ===
-    <SimpleRouting/>
-   ===PageNotFound Routhing===
-    <SimpleWebApplication/>
-   ===Movie details with Route params and query strings===
-   <MovieInfo/>
+    <br/>
+    === Routing
+    <SimpleRouting/> <br/>
+   === PageNotFound Routhing
+    <SimpleWebApplication/> <br/>
+   === Movie details with Route params and query strings
+   <MovieInfo/> <br/>
+   </Provider>
   </React.StrictMode>
   
 );

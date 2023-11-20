@@ -1,47 +1,47 @@
-
+// we use Redux to share data among components 
 import React from 'react';
 import {useSelector, useDispatch} from 'react-redux';
-//import {increment, decrement} from '../Actions';
+
 function Counter(){
-    dipatcher(increament())
+    const Counter= useSelector((state)=>state);
+    const dispatcher=useDispatch();
     //action types
     const INCREMENT= 'INCREMENT';
     const DECREMENT= 'DECREMENT';
     //action creators
-    function increament(currentValue){
+    function increment(currentValue){
         return{
             type : INCREMENT,
             payload: currentValue,
         }
     }
+
     function decrement(currentValue){
         return{
             type : DECREMENT,
             payload: currentValue,
         }
+    }   
+
+    function onIncrement(){
+        dispatcher(increment());
     }
-    // create reducer
-    function counterReducer(state =0, action){
-        switch(action.type){
-            case INCREMENT:
-                return ++state;
-            case DECREMENT:
-                return --state;
-                
-        }
-
-
-
+    
+    function onDecrement(){
+        dispatcher(decrement());
     }
     return (
         <>
         <p> {Counter}</p>
-        <button type="button" onClick={counterReducer}></button>
-    
+        <button type="button" onClick={onIncrement}>
+            INCREMENT
+         </button>
+        <button type="button" onClick={onDecrement}>
+            DECREMENT 
+         </button>
         </>
-        
-    )
-    export default Counter;
-
+     
+    ) 
 }
+export default Counter;
 
