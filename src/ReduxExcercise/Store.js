@@ -1,4 +1,4 @@
-//import {configerStore} from 'redux';
+//import {configerStore} from 'redux';// since it wored with creatStore it will be as such
 //const Store= configerStore(counterReducer);
 
 //reducer 
